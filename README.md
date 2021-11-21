@@ -59,6 +59,7 @@ _____________________________________
 For some reason this is SUPER FUCKY on Windows and i have zero clue why, it pisses me off so much
 
 Basically this just removes backgrounds and characters, This SHOULD be something you can use in Lua but i don't know how `FunkinLua.hx` works lmao
+
 Not like i could test anyways, i'm on Linux for fuck's sake.
 
 oh yeah sword engine is based off of an early version of psych engine 0.5 so i'ma have to add everything from the new official release at some point
