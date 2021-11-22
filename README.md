@@ -65,11 +65,11 @@ Not like i could test anyways, i'm on Linux for fuck's sake.
 _____________________________________
 
 ## To-do list:
-* Note Skins in the options menu [Hell]
-* Speed feature for songs [Hell, but probably will be a copy paste]
-* Extra keys [TRUE HELL, MIGHT NOT EVEN BE ADDED LOL]
-* Custom difficulties without source [Hell]
-* Skip song & Skip intro in Pause Menu only because fuck Skip Intro being in gameplay
+* >> [WORKING ON THIS] Note Skins in the options menu [Hell]
+* [NO PROGRESS YET] Speed feature for songs [Hell, but probably will be a copy paste]
+* [NO PROGRESS YET] Extra keys [TRUE HELL, MIGHT NOT EVEN BE ADDED LOL]
+* [NO PROGRESS YET]Custom difficulties without source [Hell]
+* [NO PROGRESS YET] Skip song & Skip intro in Pause Menu only because fuck Skip Intro being in gameplay
 _____________________________________
 
 ## A little note
