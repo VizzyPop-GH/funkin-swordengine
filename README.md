@@ -62,6 +62,18 @@ Basically this just removes backgrounds and characters, This SHOULD be something
 
 Not like i could test anyways, i'm on Linux for fuck's sake.
 
+_____________________________________
+
+## To-do list:
+* Note Skins in the options menu [Hell]
+* Speed feature for songs [Hell, but probably will be a copy paste]
+* Extra keys [TRUE HELL, MIGHT NOT EVEN BE ADDED LOL]
+* Custom difficulties without source [Hell]
+* Skip song & Skip intro in Pause Menu only because fuck Skip Intro being in gameplay
+_____________________________________
+
+## A little note
+
 oh yeah sword engine is based off of an early version of psych engine 0.5 so i'ma have to add everything from the new official release at some point
 probably won't tho because i might forget lol
 _____________________________________
