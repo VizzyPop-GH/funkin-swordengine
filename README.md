@@ -1,12 +1,28 @@
-# Friday Night Funkin' - Psych Engine
-Engine originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
+⚠️ **WARNING:** This README is currently incomplete, This warning will be removed once it's complete.
 
-## Installation:
+# Friday Night Funkin' - Sword Engine
+Sword Engine is based off of Psych Engine, which was originally used on the [Mind Games Mod](https://gamebanana.com/mods/301107), it's intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
+
+## Compiling:
 Follow a Friday Night Funkin' source code compilation tutorial, after this you will need to install LuaJIT.
+
+**I would recommend following the compile guide at:**
+[The Original Funkin Game's Github](https://github.com/ninjamuffin99/Funkin)
+
+Scroll down to the "build instructions" section and go from there.
+
+***MAKE SURE TO DOWNLOAD THE SOURCE CODE FOR THIS ENGINE AND NOT THE ORIGINAL BASE GAME FIRST.***
+
+One last thing, you will need to install LuaJIT along with the other libraries such as `flixel-addons` and etc.
 
 You can do this with: `haxelib install linc_luajit` on a Command prompt/PowerShell
 
-...Or if you don't want your mod to be able to run .lua scripts, delete the "LUA_ALLOWED" line on Project.xml
+...Or if you don't want your mod to be able to run .lua scripts (why), delete the "LUA_ALLOWED" line on Project.xml
+
+## Downloading:
+Go to the releases tab lol
+
+# Psych Engine Credits
 
 ## Credits:
 * Shadow Mario - Coding
@@ -15,10 +31,54 @@ You can do this with: `haxelib install linc_luajit` on a Command prompt/PowerShe
 ### Special Thanks
 * Keoiki - Note Splash Animations
 
-WARNING: This engine is still very early in development! You can request new features though
+# Sword Engine Credits
+## Credits:
+* swordcube - the only dev Lol
+
+WARNING: This engine is still in very early development, Requesting new somewhat ***SIMPLE*** features would help alot.
 _____________________________________
 
-# Features
+# Sword Engine Features
+
+## Score Text Change
+* Accuracy is now split up from the rating.
+* There are 2 ratings, a accuracy rating and another one.
+
+### Rating 1:
+* Rating 1 is S++ - F, changes depending on your accuracy.
+
+### Rating 2:
+* Rating 2 changes depending on some factors:
+* If you are FC'ing a song with all Sicks, you will get "MFC" (Marvelous Full Combo)
+* If you are FC'ing a song with Goods and Sicks, you will get "GFC" (Good Full Combo)
+* If you are FC'ing a song with Goods, Sicks, and Bads/Shits, you will get "FC" (Full Combo)
+* If you have less than 10 misses you will get "SDCB" (Single Digit Combo Breaks)
+* If you have 10 misses or more you will get "Clear"
+
+## Optimization Mode
+For some reason this is SUPER FUCKY on Windows and i have zero clue why, it pisses me off so much
+
+Basically this just removes backgrounds and characters, This SHOULD be something you can use in Lua but i don't know how `FunkinLua.hx` works lmao
+
+Not like i could test anyways, i'm on Linux for fuck's sake.
+
+_____________________________________
+
+## To-do list:
+* > [WORKING ON THIS] Note Skins in the options menu [Hell]
+* [NO PROGRESS YET] Speed feature for songs [Hell, but probably will be a copy paste]
+* [NO PROGRESS YET] Extra keys [TRUE HELL, MIGHT NOT EVEN BE ADDED LOL]
+* [NO PROGRESS YET]Custom difficulties without source [Hell]
+* [NO PROGRESS YET] Skip song & Skip intro in Pause Menu only because fuck Skip Intro being in gameplay
+_____________________________________
+
+## A little note
+
+oh yeah sword engine is based off of an early version of psych engine 0.5 so i'ma have to add everything from the new official release at some point
+probably won't tho because i might forget lol
+_____________________________________
+
+# Psych Engine Features
 
 ## Attractive animated dialogue boxes:
 
