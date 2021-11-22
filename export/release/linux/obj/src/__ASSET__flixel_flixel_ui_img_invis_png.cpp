@@ -21,7 +21,7 @@
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_6cc06506112ed14f_346_new,"__ASSET__flixel_flixel_ui_img_invis_png","new",0x0dcc0980,"__ASSET__flixel_flixel_ui_img_invis_png.new","lime/_internal/macros/AssetsMacro.hx",346,0xc651f030)
-HX_LOCAL_STACK_FRAME(_hx_pos_895e13d77b14fab4_758_boot,"__ASSET__flixel_flixel_ui_img_invis_png","boot",0xfcd54712,"__ASSET__flixel_flixel_ui_img_invis_png.boot","ManifestResources.hx",758,0xf77aa668)
+HX_LOCAL_STACK_FRAME(_hx_pos_895e13d77b14fab4_760_boot,"__ASSET__flixel_flixel_ui_img_invis_png","boot",0xfcd54712,"__ASSET__flixel_flixel_ui_img_invis_png.boot","ManifestResources.hx",760,0xf77aa668)
 
 void __ASSET__flixel_flixel_ui_img_invis_png_obj::__construct( ::lime::graphics::ImageBuffer buffer, ::Dynamic offsetX, ::Dynamic offsetY, ::Dynamic width, ::Dynamic height, ::Dynamic color, ::lime::graphics::ImageType type){
             	HX_STACKFRAME(&_hx_pos_6cc06506112ed14f_346_new)
@@ -142,8 +142,8 @@ void __ASSET__flixel_flixel_ui_img_invis_png_obj::__register()
 void __ASSET__flixel_flixel_ui_img_invis_png_obj::__boot()
 {
 {
-            	HX_STACKFRAME(&_hx_pos_895e13d77b14fab4_758_boot)
-HXDLIN( 758)		resourceName = HX_("__ASSET__:image___ASSET__flixel_flixel_ui_img_invis_png",c0,26,93,7b);
+            	HX_STACKFRAME(&_hx_pos_895e13d77b14fab4_760_boot)
+HXDLIN( 760)		resourceName = HX_("__ASSET__:image___ASSET__flixel_flixel_ui_img_invis_png",c0,26,93,7b);
             	}
 }
 

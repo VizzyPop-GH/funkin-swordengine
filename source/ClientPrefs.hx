@@ -29,6 +29,9 @@ class ClientPrefs {
 	public static var hideTime:Bool = false;
 	public static var engineWatermarks:Bool = true;
 	public static var optimization:Bool = false;
+	public static var noteSkinNum:Int = 0;
+	public static var noteSkinArray:Array<String> = ['Arrows', 'Circles', 'Squares', 'Diamonds', 'Wii', 'Gloopie', 'Bob', 'Bosip'];
+	public static var noteSkin:String = 'Arrows';
 
 	//Every key has two binds, these binds are defined on defaultKeys! If you want your control to be changeable, you have to add it on ControlsSubState (inside OptionsState.hx)'s list
 	public static var keyBinds:Map<String, Dynamic> = new Map<String, Dynamic>();
@@ -81,6 +84,12 @@ class ClientPrefs {
 		FlxG.save.data.henchmenDeath = Achievements.henchmenDeath;
 		FlxG.save.data.optimization = optimization;
 		FlxG.save.data.engineWatermarks = engineWatermarks;
+		
+		// note skin shit
+		FlxG.save.data.noteSkinNum = noteSkinNum;
+		FlxG.save.data.noteSkin = noteSkin;
+		
+		// flush the got damn shit idfk what this does i don't know haxe
 		FlxG.save.flush();
 
 		var save:FlxSave = new FlxSave();
@@ -167,6 +176,14 @@ class ClientPrefs {
 		}
 		if(FlxG.save.data.optimization != null) {
 			optimization = FlxG.save.data.optimization;
+		}
+		
+		// note skin shit
+		if(FlxG.save.data.noteSkinNum != null) {
+			noteSkinNum = FlxG.save.data.noteSkinNum;
+		}
+		if(FlxG.save.data.noteSkin != null) {
+			noteSkin = FlxG.save.data.noteSkin;
 		}
 		
 		// flixel automatically saves your volume!

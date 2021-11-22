@@ -74,10 +74,10 @@
 #include <openfl/text/TextField.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_37_startControls,"ClientPrefs","startControls",0x3c29e88f,"ClientPrefs.startControls","ClientPrefs.hx",37,0x329d1619)
-HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_59_saveSettings,"ClientPrefs","saveSettings",0xab8c0989,"ClientPrefs.saveSettings","ClientPrefs.hx",59,0x329d1619)
-HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_93_loadPrefs,"ClientPrefs","loadPrefs",0x58c63c41,"ClientPrefs.loadPrefs","ClientPrefs.hx",93,0x329d1619)
-HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_189_reloadControls,"ClientPrefs","reloadControls",0xe353bb78,"ClientPrefs.reloadControls","ClientPrefs.hx",189,0x329d1619)
+HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_38_startControls,"ClientPrefs","startControls",0x3c29e88f,"ClientPrefs.startControls","ClientPrefs.hx",38,0x329d1619)
+HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_60_saveSettings,"ClientPrefs","saveSettings",0xab8c0989,"ClientPrefs.saveSettings","ClientPrefs.hx",60,0x329d1619)
+HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_94_loadPrefs,"ClientPrefs","loadPrefs",0x58c63c41,"ClientPrefs.loadPrefs","ClientPrefs.hx",94,0x329d1619)
+HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_190_reloadControls,"ClientPrefs","reloadControls",0xe353bb78,"ClientPrefs.reloadControls","ClientPrefs.hx",190,0x329d1619)
 HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_10_boot,"ClientPrefs","boot",0xe0a3d37b,"ClientPrefs.boot","ClientPrefs.hx",10,0x329d1619)
 HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_11_boot,"ClientPrefs","boot",0xe0a3d37b,"ClientPrefs.boot","ClientPrefs.hx",11,0x329d1619)
 HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_12_boot,"ClientPrefs","boot",0xe0a3d37b,"ClientPrefs.boot","ClientPrefs.hx",12,0x329d1619)
@@ -112,7 +112,8 @@ HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_28_boot,"ClientPrefs","boot",0xe0a
 HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_29_boot,"ClientPrefs","boot",0xe0a3d37b,"ClientPrefs.boot","ClientPrefs.hx",29,0x329d1619)
 HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_30_boot,"ClientPrefs","boot",0xe0a3d37b,"ClientPrefs.boot","ClientPrefs.hx",30,0x329d1619)
 HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_31_boot,"ClientPrefs","boot",0xe0a3d37b,"ClientPrefs.boot","ClientPrefs.hx",31,0x329d1619)
-HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_34_boot,"ClientPrefs","boot",0xe0a3d37b,"ClientPrefs.boot","ClientPrefs.hx",34,0x329d1619)
+HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_32_boot,"ClientPrefs","boot",0xe0a3d37b,"ClientPrefs.boot","ClientPrefs.hx",32,0x329d1619)
+HX_LOCAL_STACK_FRAME(_hx_pos_1453641688f31b8d_35_boot,"ClientPrefs","boot",0xe0a3d37b,"ClientPrefs.boot","ClientPrefs.hx",35,0x329d1619)
 
 void ClientPrefs_obj::__construct() { }
 
@@ -175,162 +176,164 @@ bool ClientPrefs_obj::engineWatermarks;
 
 bool ClientPrefs_obj::optimization;
 
+bool ClientPrefs_obj::week7AssetsAllowed;
+
  ::haxe::ds::StringMap ClientPrefs_obj::keyBinds;
 
  ::haxe::ds::StringMap ClientPrefs_obj::defaultKeys;
 
 void ClientPrefs_obj::startControls(){
-            	HX_STACKFRAME(&_hx_pos_1453641688f31b8d_37_startControls)
-HXLINE(  39)		::ClientPrefs_obj::keyBinds->set(HX_("note_left",b4,fe,20,a5),::cpp::VirtualArray_obj::__new(2)->init(0,65)->init(1,37));
-HXLINE(  40)		::ClientPrefs_obj::keyBinds->set(HX_("note_down",0f,ef,de,9f),::cpp::VirtualArray_obj::__new(2)->init(0,83)->init(1,40));
-HXLINE(  41)		::ClientPrefs_obj::keyBinds->set(HX_("note_up",c8,67,5c,4d),::cpp::VirtualArray_obj::__new(2)->init(0,87)->init(1,38));
-HXLINE(  42)		::ClientPrefs_obj::keyBinds->set(HX_("note_right",8f,ec,ca,4e),::cpp::VirtualArray_obj::__new(2)->init(0,68)->init(1,39));
-HXLINE(  44)		::ClientPrefs_obj::keyBinds->set(HX_("ui_left",12,4d,89,f7),::cpp::VirtualArray_obj::__new(2)->init(0,65)->init(1,37));
-HXLINE(  45)		::ClientPrefs_obj::keyBinds->set(HX_("ui_down",6d,3d,47,f2),::cpp::VirtualArray_obj::__new(2)->init(0,83)->init(1,40));
-HXLINE(  46)		::ClientPrefs_obj::keyBinds->set(HX_("ui_up",a6,c2,91,a3),::cpp::VirtualArray_obj::__new(2)->init(0,87)->init(1,38));
-HXLINE(  47)		::ClientPrefs_obj::keyBinds->set(HX_("ui_right",71,30,a7,17),::cpp::VirtualArray_obj::__new(2)->init(0,68)->init(1,39));
-HXLINE(  49)		::ClientPrefs_obj::keyBinds->set(HX_("accept",08,93,06,0b),::cpp::VirtualArray_obj::__new(2)->init(0,32)->init(1,13));
-HXLINE(  50)		::ClientPrefs_obj::keyBinds->set(HX_("back",27,da,10,41),::cpp::VirtualArray_obj::__new(2)->init(0,8)->init(1,27));
-HXLINE(  51)		::ClientPrefs_obj::keyBinds->set(HX_("pause",f6,d6,57,bd),::cpp::VirtualArray_obj::__new(2)->init(0,13)->init(1,27));
-HXLINE(  52)		::ClientPrefs_obj::keyBinds->set(HX_("reset",cf,49,c8,e6),::cpp::VirtualArray_obj::__new(2)->init(0,82)->init(1,-1));
-HXLINE(  56)		::ClientPrefs_obj::defaultKeys = ::ClientPrefs_obj::keyBinds->copy();
+            	HX_STACKFRAME(&_hx_pos_1453641688f31b8d_38_startControls)
+HXLINE(  40)		::ClientPrefs_obj::keyBinds->set(HX_("note_left",b4,fe,20,a5),::cpp::VirtualArray_obj::__new(2)->init(0,65)->init(1,37));
+HXLINE(  41)		::ClientPrefs_obj::keyBinds->set(HX_("note_down",0f,ef,de,9f),::cpp::VirtualArray_obj::__new(2)->init(0,83)->init(1,40));
+HXLINE(  42)		::ClientPrefs_obj::keyBinds->set(HX_("note_up",c8,67,5c,4d),::cpp::VirtualArray_obj::__new(2)->init(0,87)->init(1,38));
+HXLINE(  43)		::ClientPrefs_obj::keyBinds->set(HX_("note_right",8f,ec,ca,4e),::cpp::VirtualArray_obj::__new(2)->init(0,68)->init(1,39));
+HXLINE(  45)		::ClientPrefs_obj::keyBinds->set(HX_("ui_left",12,4d,89,f7),::cpp::VirtualArray_obj::__new(2)->init(0,65)->init(1,37));
+HXLINE(  46)		::ClientPrefs_obj::keyBinds->set(HX_("ui_down",6d,3d,47,f2),::cpp::VirtualArray_obj::__new(2)->init(0,83)->init(1,40));
+HXLINE(  47)		::ClientPrefs_obj::keyBinds->set(HX_("ui_up",a6,c2,91,a3),::cpp::VirtualArray_obj::__new(2)->init(0,87)->init(1,38));
+HXLINE(  48)		::ClientPrefs_obj::keyBinds->set(HX_("ui_right",71,30,a7,17),::cpp::VirtualArray_obj::__new(2)->init(0,68)->init(1,39));
+HXLINE(  50)		::ClientPrefs_obj::keyBinds->set(HX_("accept",08,93,06,0b),::cpp::VirtualArray_obj::__new(2)->init(0,32)->init(1,13));
+HXLINE(  51)		::ClientPrefs_obj::keyBinds->set(HX_("back",27,da,10,41),::cpp::VirtualArray_obj::__new(2)->init(0,8)->init(1,27));
+HXLINE(  52)		::ClientPrefs_obj::keyBinds->set(HX_("pause",f6,d6,57,bd),::cpp::VirtualArray_obj::__new(2)->init(0,13)->init(1,27));
+HXLINE(  53)		::ClientPrefs_obj::keyBinds->set(HX_("reset",cf,49,c8,e6),::cpp::VirtualArray_obj::__new(2)->init(0,82)->init(1,-1));
+HXLINE(  57)		::ClientPrefs_obj::defaultKeys = ::ClientPrefs_obj::keyBinds->copy();
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(ClientPrefs_obj,startControls,(void))
 
 void ClientPrefs_obj::saveSettings(){
-            	HX_GC_STACKFRAME(&_hx_pos_1453641688f31b8d_59_saveSettings)
-HXLINE(  60)		::flixel::FlxG_obj::save->data->__SetField(HX_("downScroll",0f,ba,68,84),::ClientPrefs_obj::downScroll,::hx::paccDynamic);
-HXLINE(  61)		::flixel::FlxG_obj::save->data->__SetField(HX_("middleScroll",42,cd,58,62),::ClientPrefs_obj::middleScroll,::hx::paccDynamic);
-HXLINE(  62)		::flixel::FlxG_obj::save->data->__SetField(HX_("showFPS",ec,0a,9a,7b),::ClientPrefs_obj::showFPS,::hx::paccDynamic);
-HXLINE(  63)		::flixel::FlxG_obj::save->data->__SetField(HX_("flashing",32,85,e8,99),::ClientPrefs_obj::flashing,::hx::paccDynamic);
-HXLINE(  64)		::flixel::FlxG_obj::save->data->__SetField(HX_("globalAntialiasing",f7,9c,ed,4c),::ClientPrefs_obj::globalAntialiasing,::hx::paccDynamic);
-HXLINE(  65)		::flixel::FlxG_obj::save->data->__SetField(HX_("noteSplashes",a7,57,29,8d),::ClientPrefs_obj::noteSplashes,::hx::paccDynamic);
-HXLINE(  66)		::flixel::FlxG_obj::save->data->__SetField(HX_("lowQuality",8b,52,27,3e),::ClientPrefs_obj::lowQuality,::hx::paccDynamic);
-HXLINE(  67)		::flixel::FlxG_obj::save->data->__SetField(HX_("framerate",8d,e5,4b,4e),::ClientPrefs_obj::framerate,::hx::paccDynamic);
-HXLINE(  70)		::flixel::FlxG_obj::save->data->__SetField(HX_("speed",87,97,69,81),::ClientPrefs_obj::speed,::hx::paccDynamic);
-HXLINE(  71)		::flixel::FlxG_obj::save->data->__SetField(HX_("scroll",0d,d8,64,47),::ClientPrefs_obj::scroll,::hx::paccDynamic);
-HXLINE(  72)		::flixel::FlxG_obj::save->data->__SetField(HX_("noteSize",d3,c5,86,5b),::ClientPrefs_obj::noteSize,::hx::paccDynamic);
-HXLINE(  73)		::flixel::FlxG_obj::save->data->__SetField(HX_("camZooms",71,f3,cd,90),::ClientPrefs_obj::camZooms,::hx::paccDynamic);
-HXLINE(  74)		::flixel::FlxG_obj::save->data->__SetField(HX_("noteOffset",25,a5,53,fe),::ClientPrefs_obj::noteOffset,::hx::paccDynamic);
-HXLINE(  75)		::flixel::FlxG_obj::save->data->__SetField(HX_("hideHud",15,b9,3c,b7),::ClientPrefs_obj::hideHud,::hx::paccDynamic);
-HXLINE(  76)		::flixel::FlxG_obj::save->data->__SetField(HX_("arrowHSV",c2,f4,b4,fd),::ClientPrefs_obj::arrowHSV,::hx::paccDynamic);
-HXLINE(  77)		::flixel::FlxG_obj::save->data->__SetField(HX_("imagesPersist",3c,00,5c,08),::ClientPrefs_obj::imagesPersist,::hx::paccDynamic);
-HXLINE(  78)		::flixel::FlxG_obj::save->data->__SetField(HX_("ghostTapping",c6,6a,da,10),::ClientPrefs_obj::ghostTapping,::hx::paccDynamic);
-HXLINE(  79)		::flixel::FlxG_obj::save->data->__SetField(HX_("hideTime",ef,b5,ca,a5),::ClientPrefs_obj::hideTime,::hx::paccDynamic);
-HXLINE(  80)		::flixel::FlxG_obj::save->data->__SetField(HX_("achievementsMap",d8,6f,d5,91),::Achievements_obj::achievementsMap,::hx::paccDynamic);
-HXLINE(  81)		::flixel::FlxG_obj::save->data->__SetField(HX_("henchmenDeath",f4,76,2a,dd),::Achievements_obj::henchmenDeath,::hx::paccDynamic);
-HXLINE(  82)		::flixel::FlxG_obj::save->data->__SetField(HX_("optimization",2d,3b,3f,e1),::ClientPrefs_obj::optimization,::hx::paccDynamic);
-HXLINE(  83)		::flixel::FlxG_obj::save->data->__SetField(HX_("engineWatermarks",b1,52,3c,d3),::ClientPrefs_obj::engineWatermarks,::hx::paccDynamic);
-HXLINE(  84)		::flixel::FlxG_obj::save->flush(null(),null());
-HXLINE(  86)		 ::flixel::util::FlxSave save =  ::flixel::util::FlxSave_obj::__alloc( HX_CTX );
-HXLINE(  87)		save->bind(HX_("controls_v2",65,e4,a2,26),HX_("ninjamuffin99",f7,4c,e5,00));
-HXLINE(  88)		save->data->__SetField(HX_("customControls",47,63,49,5a),::ClientPrefs_obj::keyBinds,::hx::paccDynamic);
-HXLINE(  89)		save->flush(null(),null());
+            	HX_GC_STACKFRAME(&_hx_pos_1453641688f31b8d_60_saveSettings)
+HXLINE(  61)		::flixel::FlxG_obj::save->data->__SetField(HX_("downScroll",0f,ba,68,84),::ClientPrefs_obj::downScroll,::hx::paccDynamic);
+HXLINE(  62)		::flixel::FlxG_obj::save->data->__SetField(HX_("middleScroll",42,cd,58,62),::ClientPrefs_obj::middleScroll,::hx::paccDynamic);
+HXLINE(  63)		::flixel::FlxG_obj::save->data->__SetField(HX_("showFPS",ec,0a,9a,7b),::ClientPrefs_obj::showFPS,::hx::paccDynamic);
+HXLINE(  64)		::flixel::FlxG_obj::save->data->__SetField(HX_("flashing",32,85,e8,99),::ClientPrefs_obj::flashing,::hx::paccDynamic);
+HXLINE(  65)		::flixel::FlxG_obj::save->data->__SetField(HX_("globalAntialiasing",f7,9c,ed,4c),::ClientPrefs_obj::globalAntialiasing,::hx::paccDynamic);
+HXLINE(  66)		::flixel::FlxG_obj::save->data->__SetField(HX_("noteSplashes",a7,57,29,8d),::ClientPrefs_obj::noteSplashes,::hx::paccDynamic);
+HXLINE(  67)		::flixel::FlxG_obj::save->data->__SetField(HX_("lowQuality",8b,52,27,3e),::ClientPrefs_obj::lowQuality,::hx::paccDynamic);
+HXLINE(  68)		::flixel::FlxG_obj::save->data->__SetField(HX_("framerate",8d,e5,4b,4e),::ClientPrefs_obj::framerate,::hx::paccDynamic);
+HXLINE(  71)		::flixel::FlxG_obj::save->data->__SetField(HX_("speed",87,97,69,81),::ClientPrefs_obj::speed,::hx::paccDynamic);
+HXLINE(  72)		::flixel::FlxG_obj::save->data->__SetField(HX_("scroll",0d,d8,64,47),::ClientPrefs_obj::scroll,::hx::paccDynamic);
+HXLINE(  73)		::flixel::FlxG_obj::save->data->__SetField(HX_("noteSize",d3,c5,86,5b),::ClientPrefs_obj::noteSize,::hx::paccDynamic);
+HXLINE(  74)		::flixel::FlxG_obj::save->data->__SetField(HX_("camZooms",71,f3,cd,90),::ClientPrefs_obj::camZooms,::hx::paccDynamic);
+HXLINE(  75)		::flixel::FlxG_obj::save->data->__SetField(HX_("noteOffset",25,a5,53,fe),::ClientPrefs_obj::noteOffset,::hx::paccDynamic);
+HXLINE(  76)		::flixel::FlxG_obj::save->data->__SetField(HX_("hideHud",15,b9,3c,b7),::ClientPrefs_obj::hideHud,::hx::paccDynamic);
+HXLINE(  77)		::flixel::FlxG_obj::save->data->__SetField(HX_("arrowHSV",c2,f4,b4,fd),::ClientPrefs_obj::arrowHSV,::hx::paccDynamic);
+HXLINE(  78)		::flixel::FlxG_obj::save->data->__SetField(HX_("imagesPersist",3c,00,5c,08),::ClientPrefs_obj::imagesPersist,::hx::paccDynamic);
+HXLINE(  79)		::flixel::FlxG_obj::save->data->__SetField(HX_("ghostTapping",c6,6a,da,10),::ClientPrefs_obj::ghostTapping,::hx::paccDynamic);
+HXLINE(  80)		::flixel::FlxG_obj::save->data->__SetField(HX_("hideTime",ef,b5,ca,a5),::ClientPrefs_obj::hideTime,::hx::paccDynamic);
+HXLINE(  81)		::flixel::FlxG_obj::save->data->__SetField(HX_("achievementsMap",d8,6f,d5,91),::Achievements_obj::achievementsMap,::hx::paccDynamic);
+HXLINE(  82)		::flixel::FlxG_obj::save->data->__SetField(HX_("henchmenDeath",f4,76,2a,dd),::Achievements_obj::henchmenDeath,::hx::paccDynamic);
+HXLINE(  83)		::flixel::FlxG_obj::save->data->__SetField(HX_("optimization",2d,3b,3f,e1),::ClientPrefs_obj::optimization,::hx::paccDynamic);
+HXLINE(  84)		::flixel::FlxG_obj::save->data->__SetField(HX_("engineWatermarks",b1,52,3c,d3),::ClientPrefs_obj::engineWatermarks,::hx::paccDynamic);
+HXLINE(  85)		::flixel::FlxG_obj::save->flush(null(),null());
+HXLINE(  87)		 ::flixel::util::FlxSave save =  ::flixel::util::FlxSave_obj::__alloc( HX_CTX );
+HXLINE(  88)		save->bind(HX_("controls_v2",65,e4,a2,26),HX_("ninjamuffin99",f7,4c,e5,00));
+HXLINE(  89)		save->data->__SetField(HX_("customControls",47,63,49,5a),::ClientPrefs_obj::keyBinds,::hx::paccDynamic);
+HXLINE(  90)		save->flush(null(),null());
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(ClientPrefs_obj,saveSettings,(void))
 
 void ClientPrefs_obj::loadPrefs(){
-            	HX_GC_STACKFRAME(&_hx_pos_1453641688f31b8d_93_loadPrefs)
-HXLINE(  94)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("downScroll",0f,ba,68,84),::hx::paccDynamic) )) {
-HXLINE(  95)			::ClientPrefs_obj::downScroll = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("downScroll",0f,ba,68,84),::hx::paccDynamic)) );
+            	HX_GC_STACKFRAME(&_hx_pos_1453641688f31b8d_94_loadPrefs)
+HXLINE(  95)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("downScroll",0f,ba,68,84),::hx::paccDynamic) )) {
+HXLINE(  96)			::ClientPrefs_obj::downScroll = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("downScroll",0f,ba,68,84),::hx::paccDynamic)) );
             		}
-HXLINE(  97)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("middleScroll",42,cd,58,62),::hx::paccDynamic) )) {
-HXLINE(  98)			::ClientPrefs_obj::middleScroll = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("middleScroll",42,cd,58,62),::hx::paccDynamic)) );
+HXLINE(  98)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("middleScroll",42,cd,58,62),::hx::paccDynamic) )) {
+HXLINE(  99)			::ClientPrefs_obj::middleScroll = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("middleScroll",42,cd,58,62),::hx::paccDynamic)) );
             		}
-HXLINE( 100)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("showFPS",ec,0a,9a,7b),::hx::paccDynamic) )) {
-HXLINE( 101)			::ClientPrefs_obj::showFPS = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("showFPS",ec,0a,9a,7b),::hx::paccDynamic)) );
-HXLINE( 102)			if (::hx::IsNotNull( ::Main_obj::fpsVar )) {
-HXLINE( 103)				::Main_obj::fpsVar->set_visible(::ClientPrefs_obj::showFPS);
+HXLINE( 101)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("showFPS",ec,0a,9a,7b),::hx::paccDynamic) )) {
+HXLINE( 102)			::ClientPrefs_obj::showFPS = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("showFPS",ec,0a,9a,7b),::hx::paccDynamic)) );
+HXLINE( 103)			if (::hx::IsNotNull( ::Main_obj::fpsVar )) {
+HXLINE( 104)				::Main_obj::fpsVar->set_visible(::ClientPrefs_obj::showFPS);
             			}
             		}
-HXLINE( 106)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("flashing",32,85,e8,99),::hx::paccDynamic) )) {
-HXLINE( 107)			::ClientPrefs_obj::flashing = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("flashing",32,85,e8,99),::hx::paccDynamic)) );
+HXLINE( 107)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("flashing",32,85,e8,99),::hx::paccDynamic) )) {
+HXLINE( 108)			::ClientPrefs_obj::flashing = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("flashing",32,85,e8,99),::hx::paccDynamic)) );
             		}
-HXLINE( 109)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("globalAntialiasing",f7,9c,ed,4c),::hx::paccDynamic) )) {
-HXLINE( 110)			::ClientPrefs_obj::globalAntialiasing = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("globalAntialiasing",f7,9c,ed,4c),::hx::paccDynamic)) );
+HXLINE( 110)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("globalAntialiasing",f7,9c,ed,4c),::hx::paccDynamic) )) {
+HXLINE( 111)			::ClientPrefs_obj::globalAntialiasing = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("globalAntialiasing",f7,9c,ed,4c),::hx::paccDynamic)) );
             		}
-HXLINE( 112)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("noteSplashes",a7,57,29,8d),::hx::paccDynamic) )) {
-HXLINE( 113)			::ClientPrefs_obj::noteSplashes = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("noteSplashes",a7,57,29,8d),::hx::paccDynamic)) );
+HXLINE( 113)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("noteSplashes",a7,57,29,8d),::hx::paccDynamic) )) {
+HXLINE( 114)			::ClientPrefs_obj::noteSplashes = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("noteSplashes",a7,57,29,8d),::hx::paccDynamic)) );
             		}
-HXLINE( 115)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("lowQuality",8b,52,27,3e),::hx::paccDynamic) )) {
-HXLINE( 116)			::ClientPrefs_obj::lowQuality = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("lowQuality",8b,52,27,3e),::hx::paccDynamic)) );
+HXLINE( 116)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("lowQuality",8b,52,27,3e),::hx::paccDynamic) )) {
+HXLINE( 117)			::ClientPrefs_obj::lowQuality = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("lowQuality",8b,52,27,3e),::hx::paccDynamic)) );
             		}
-HXLINE( 118)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("framerate",8d,e5,4b,4e),::hx::paccDynamic) )) {
-HXLINE( 119)			::ClientPrefs_obj::framerate = ( (int)(::flixel::FlxG_obj::save->data->__Field(HX_("framerate",8d,e5,4b,4e),::hx::paccDynamic)) );
-HXLINE( 120)			if ((::ClientPrefs_obj::framerate > ::flixel::FlxG_obj::drawFramerate)) {
-HXLINE( 121)				::flixel::FlxG_obj::set_updateFramerate(::ClientPrefs_obj::framerate);
-HXLINE( 122)				::flixel::FlxG_obj::set_drawFramerate(::ClientPrefs_obj::framerate);
+HXLINE( 119)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("framerate",8d,e5,4b,4e),::hx::paccDynamic) )) {
+HXLINE( 120)			::ClientPrefs_obj::framerate = ( (int)(::flixel::FlxG_obj::save->data->__Field(HX_("framerate",8d,e5,4b,4e),::hx::paccDynamic)) );
+HXLINE( 121)			if ((::ClientPrefs_obj::framerate > ::flixel::FlxG_obj::drawFramerate)) {
+HXLINE( 122)				::flixel::FlxG_obj::set_updateFramerate(::ClientPrefs_obj::framerate);
+HXLINE( 123)				::flixel::FlxG_obj::set_drawFramerate(::ClientPrefs_obj::framerate);
             			}
             			else {
-HXLINE( 124)				::flixel::FlxG_obj::set_drawFramerate(::ClientPrefs_obj::framerate);
-HXLINE( 125)				::flixel::FlxG_obj::set_updateFramerate(::ClientPrefs_obj::framerate);
+HXLINE( 125)				::flixel::FlxG_obj::set_drawFramerate(::ClientPrefs_obj::framerate);
+HXLINE( 126)				::flixel::FlxG_obj::set_updateFramerate(::ClientPrefs_obj::framerate);
             			}
             		}
-HXLINE( 134)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("camZooms",71,f3,cd,90),::hx::paccDynamic) )) {
-HXLINE( 135)			::ClientPrefs_obj::camZooms = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("camZooms",71,f3,cd,90),::hx::paccDynamic)) );
+HXLINE( 135)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("camZooms",71,f3,cd,90),::hx::paccDynamic) )) {
+HXLINE( 136)			::ClientPrefs_obj::camZooms = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("camZooms",71,f3,cd,90),::hx::paccDynamic)) );
             		}
-HXLINE( 137)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("hideHud",15,b9,3c,b7),::hx::paccDynamic) )) {
-HXLINE( 138)			::ClientPrefs_obj::hideHud = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("hideHud",15,b9,3c,b7),::hx::paccDynamic)) );
+HXLINE( 138)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("hideHud",15,b9,3c,b7),::hx::paccDynamic) )) {
+HXLINE( 139)			::ClientPrefs_obj::hideHud = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("hideHud",15,b9,3c,b7),::hx::paccDynamic)) );
             		}
-HXLINE( 140)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("noteOffset",25,a5,53,fe),::hx::paccDynamic) )) {
-HXLINE( 141)			::ClientPrefs_obj::noteOffset = ( (int)(::flixel::FlxG_obj::save->data->__Field(HX_("noteOffset",25,a5,53,fe),::hx::paccDynamic)) );
+HXLINE( 141)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("noteOffset",25,a5,53,fe),::hx::paccDynamic) )) {
+HXLINE( 142)			::ClientPrefs_obj::noteOffset = ( (int)(::flixel::FlxG_obj::save->data->__Field(HX_("noteOffset",25,a5,53,fe),::hx::paccDynamic)) );
             		}
-HXLINE( 143)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("arrowHSV",c2,f4,b4,fd),::hx::paccDynamic) )) {
-HXLINE( 144)			::ClientPrefs_obj::arrowHSV = ( (::Array< ::Dynamic>)(::flixel::FlxG_obj::save->data->__Field(HX_("arrowHSV",c2,f4,b4,fd),::hx::paccDynamic)) );
+HXLINE( 144)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("arrowHSV",c2,f4,b4,fd),::hx::paccDynamic) )) {
+HXLINE( 145)			::ClientPrefs_obj::arrowHSV = ( (::Array< ::Dynamic>)(::flixel::FlxG_obj::save->data->__Field(HX_("arrowHSV",c2,f4,b4,fd),::hx::paccDynamic)) );
             		}
-HXLINE( 146)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("speed",87,97,69,81),::hx::paccDynamic) )) {
-HXLINE( 147)			::ClientPrefs_obj::speed = ( (Float)(::flixel::FlxG_obj::save->data->__Field(HX_("speed",87,97,69,81),::hx::paccDynamic)) );
+HXLINE( 147)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("speed",87,97,69,81),::hx::paccDynamic) )) {
+HXLINE( 148)			::ClientPrefs_obj::speed = ( (Float)(::flixel::FlxG_obj::save->data->__Field(HX_("speed",87,97,69,81),::hx::paccDynamic)) );
             		}
-HXLINE( 149)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("scroll",0d,d8,64,47),::hx::paccDynamic) )) {
-HXLINE( 150)			::ClientPrefs_obj::scroll = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("scroll",0d,d8,64,47),::hx::paccDynamic)) );
+HXLINE( 150)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("scroll",0d,d8,64,47),::hx::paccDynamic) )) {
+HXLINE( 151)			::ClientPrefs_obj::scroll = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("scroll",0d,d8,64,47),::hx::paccDynamic)) );
             		}
-HXLINE( 152)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("noteSize",d3,c5,86,5b),::hx::paccDynamic) )) {
-HXLINE( 153)			::ClientPrefs_obj::noteSize = ( (Float)(::flixel::FlxG_obj::save->data->__Field(HX_("noteSize",d3,c5,86,5b),::hx::paccDynamic)) );
+HXLINE( 153)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("noteSize",d3,c5,86,5b),::hx::paccDynamic) )) {
+HXLINE( 154)			::ClientPrefs_obj::noteSize = ( (Float)(::flixel::FlxG_obj::save->data->__Field(HX_("noteSize",d3,c5,86,5b),::hx::paccDynamic)) );
             		}
-HXLINE( 155)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("imagesPersist",3c,00,5c,08),::hx::paccDynamic) )) {
-HXLINE( 156)			::ClientPrefs_obj::imagesPersist = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("imagesPersist",3c,00,5c,08),::hx::paccDynamic)) );
-HXLINE( 157)			::flixel::graphics::FlxGraphic_obj::defaultPersist = ::ClientPrefs_obj::imagesPersist;
+HXLINE( 156)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("imagesPersist",3c,00,5c,08),::hx::paccDynamic) )) {
+HXLINE( 157)			::ClientPrefs_obj::imagesPersist = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("imagesPersist",3c,00,5c,08),::hx::paccDynamic)) );
+HXLINE( 158)			::flixel::graphics::FlxGraphic_obj::defaultPersist = ::ClientPrefs_obj::imagesPersist;
             		}
-HXLINE( 159)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("ghostTapping",c6,6a,da,10),::hx::paccDynamic) )) {
-HXLINE( 160)			::ClientPrefs_obj::ghostTapping = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("ghostTapping",c6,6a,da,10),::hx::paccDynamic)) );
+HXLINE( 160)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("ghostTapping",c6,6a,da,10),::hx::paccDynamic) )) {
+HXLINE( 161)			::ClientPrefs_obj::ghostTapping = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("ghostTapping",c6,6a,da,10),::hx::paccDynamic)) );
             		}
-HXLINE( 162)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("hideTime",ef,b5,ca,a5),::hx::paccDynamic) )) {
-HXLINE( 163)			::ClientPrefs_obj::hideTime = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("hideTime",ef,b5,ca,a5),::hx::paccDynamic)) );
+HXLINE( 163)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("hideTime",ef,b5,ca,a5),::hx::paccDynamic) )) {
+HXLINE( 164)			::ClientPrefs_obj::hideTime = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("hideTime",ef,b5,ca,a5),::hx::paccDynamic)) );
             		}
-HXLINE( 165)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("engineWatermarks",b1,52,3c,d3),::hx::paccDynamic) )) {
-HXLINE( 166)			::ClientPrefs_obj::engineWatermarks = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("engineWatermarks",b1,52,3c,d3),::hx::paccDynamic)) );
+HXLINE( 166)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("engineWatermarks",b1,52,3c,d3),::hx::paccDynamic) )) {
+HXLINE( 167)			::ClientPrefs_obj::engineWatermarks = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("engineWatermarks",b1,52,3c,d3),::hx::paccDynamic)) );
             		}
-HXLINE( 168)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("optimization",2d,3b,3f,e1),::hx::paccDynamic) )) {
-HXLINE( 169)			::ClientPrefs_obj::optimization = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("optimization",2d,3b,3f,e1),::hx::paccDynamic)) );
+HXLINE( 169)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("optimization",2d,3b,3f,e1),::hx::paccDynamic) )) {
+HXLINE( 170)			::ClientPrefs_obj::optimization = ( (bool)(::flixel::FlxG_obj::save->data->__Field(HX_("optimization",2d,3b,3f,e1),::hx::paccDynamic)) );
             		}
-HXLINE( 173)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("volume",da,29,53,5f),::hx::paccDynamic) )) {
-HXLINE( 174)			::flixel::FlxG_obj::sound->set_volume(( (Float)(::flixel::FlxG_obj::save->data->__Field(HX_("volume",da,29,53,5f),::hx::paccDynamic)) ));
+HXLINE( 174)		if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data->__Field(HX_("volume",da,29,53,5f),::hx::paccDynamic) )) {
+HXLINE( 175)			::flixel::FlxG_obj::sound->set_volume(( (Float)(::flixel::FlxG_obj::save->data->__Field(HX_("volume",da,29,53,5f),::hx::paccDynamic)) ));
             		}
-HXLINE( 177)		 ::flixel::util::FlxSave save =  ::flixel::util::FlxSave_obj::__alloc( HX_CTX );
-HXLINE( 178)		save->bind(HX_("controls_v2",65,e4,a2,26),HX_("ninjamuffin99",f7,4c,e5,00));
-HXLINE( 179)		bool _hx_tmp;
-HXDLIN( 179)		if (::hx::IsNotNull( save )) {
-HXLINE( 179)			_hx_tmp = ::hx::IsNotNull( save->data->__Field(HX_("customControls",47,63,49,5a),::hx::paccDynamic) );
+HXLINE( 178)		 ::flixel::util::FlxSave save =  ::flixel::util::FlxSave_obj::__alloc( HX_CTX );
+HXLINE( 179)		save->bind(HX_("controls_v2",65,e4,a2,26),HX_("ninjamuffin99",f7,4c,e5,00));
+HXLINE( 180)		bool _hx_tmp;
+HXDLIN( 180)		if (::hx::IsNotNull( save )) {
+HXLINE( 180)			_hx_tmp = ::hx::IsNotNull( save->data->__Field(HX_("customControls",47,63,49,5a),::hx::paccDynamic) );
             		}
             		else {
-HXLINE( 179)			_hx_tmp = false;
+HXLINE( 180)			_hx_tmp = false;
             		}
-HXDLIN( 179)		if (_hx_tmp) {
-HXLINE( 180)			 ::haxe::ds::StringMap loadedControls = ( ( ::haxe::ds::StringMap)(save->data->__Field(HX_("customControls",47,63,49,5a),::hx::paccDynamic)) );
-HXLINE( 181)			{
-HXLINE( 181)				 ::Dynamic _g =  ::haxe::iterators::MapKeyValueIterator_obj::__alloc( HX_CTX ,loadedControls);
-HXDLIN( 181)				while(( (bool)(_g->__Field(HX_("hasNext",6d,a5,46,18),::hx::paccDynamic)()) )){
-HXLINE( 181)					 ::Dynamic _g1 = _g->__Field(HX_("next",f3,84,02,49),::hx::paccDynamic)();
-HXDLIN( 181)					::String control = ( (::String)(_g1->__Field(HX_("key",9f,89,51,00),::hx::paccDynamic)) );
-HXDLIN( 181)					 ::Dynamic keys =  ::Dynamic(_g1->__Field(HX_("value",71,7f,b8,31),::hx::paccDynamic));
-HXLINE( 182)					::ClientPrefs_obj::keyBinds->set(control,keys);
+HXDLIN( 180)		if (_hx_tmp) {
+HXLINE( 181)			 ::haxe::ds::StringMap loadedControls = ( ( ::haxe::ds::StringMap)(save->data->__Field(HX_("customControls",47,63,49,5a),::hx::paccDynamic)) );
+HXLINE( 182)			{
+HXLINE( 182)				 ::Dynamic _g =  ::haxe::iterators::MapKeyValueIterator_obj::__alloc( HX_CTX ,loadedControls);
+HXDLIN( 182)				while(( (bool)(_g->__Field(HX_("hasNext",6d,a5,46,18),::hx::paccDynamic)()) )){
+HXLINE( 182)					 ::Dynamic _g1 = _g->__Field(HX_("next",f3,84,02,49),::hx::paccDynamic)();
+HXDLIN( 182)					::String control = ( (::String)(_g1->__Field(HX_("key",9f,89,51,00),::hx::paccDynamic)) );
+HXDLIN( 182)					 ::Dynamic keys =  ::Dynamic(_g1->__Field(HX_("value",71,7f,b8,31),::hx::paccDynamic));
+HXLINE( 183)					::ClientPrefs_obj::keyBinds->set(control,keys);
             				}
             			}
-HXLINE( 184)			::ClientPrefs_obj::reloadControls();
+HXLINE( 185)			::ClientPrefs_obj::reloadControls();
             		}
             	}
 
@@ -338,8 +341,8 @@ HXLINE( 184)			::ClientPrefs_obj::reloadControls();
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(ClientPrefs_obj,loadPrefs,(void))
 
 void ClientPrefs_obj::reloadControls(){
-            	HX_STACKFRAME(&_hx_pos_1453641688f31b8d_189_reloadControls)
-HXDLIN( 189)		::PlayerSettings_obj::player1->controls->setKeyboardScheme(::KeyboardScheme_obj::Solo_dyn(),null());
+            	HX_STACKFRAME(&_hx_pos_1453641688f31b8d_190_reloadControls)
+HXDLIN( 190)		::PlayerSettings_obj::player1->controls->setKeyboardScheme(::KeyboardScheme_obj::Solo_dyn(),null());
             	}
 
 
@@ -404,6 +407,7 @@ bool ClientPrefs_obj::__GetStatic(const ::String &inName, Dynamic &outValue, ::h
 		break;
 	case 18:
 		if (HX_FIELD_EQ(inName,"globalAntialiasing") ) { outValue = ( globalAntialiasing ); return true; }
+		if (HX_FIELD_EQ(inName,"week7AssetsAllowed") ) { outValue = ( week7AssetsAllowed ); return true; }
 	}
 	return false;
 }
@@ -456,6 +460,7 @@ bool ClientPrefs_obj::__SetStatic(const ::String &inName,Dynamic &ioValue,::hx::
 		break;
 	case 18:
 		if (HX_FIELD_EQ(inName,"globalAntialiasing") ) { globalAntialiasing=ioValue.Cast< bool >(); return true; }
+		if (HX_FIELD_EQ(inName,"week7AssetsAllowed") ) { week7AssetsAllowed=ioValue.Cast< bool >(); return true; }
 	}
 	return false;
 }
@@ -485,6 +490,7 @@ static ::hx::StaticInfo ClientPrefs_obj_sStaticStorageInfo[] = {
 	{::hx::fsBool,(void *) &ClientPrefs_obj::hideTime,HX_("hideTime",ef,b5,ca,a5)},
 	{::hx::fsBool,(void *) &ClientPrefs_obj::engineWatermarks,HX_("engineWatermarks",b1,52,3c,d3)},
 	{::hx::fsBool,(void *) &ClientPrefs_obj::optimization,HX_("optimization",2d,3b,3f,e1)},
+	{::hx::fsBool,(void *) &ClientPrefs_obj::week7AssetsAllowed,HX_("week7AssetsAllowed",22,53,c3,62)},
 	{::hx::fsObject /*  ::haxe::ds::StringMap */ ,(void *) &ClientPrefs_obj::keyBinds,HX_("keyBinds",f7,b5,69,f7)},
 	{::hx::fsObject /*  ::haxe::ds::StringMap */ ,(void *) &ClientPrefs_obj::defaultKeys,HX_("defaultKeys",55,db,c5,18)},
 	{ ::hx::fsUnknown, 0, null()}
@@ -514,6 +520,7 @@ static void ClientPrefs_obj_sMarkStatics(HX_MARK_PARAMS) {
 	HX_MARK_MEMBER_NAME(ClientPrefs_obj::hideTime,"hideTime");
 	HX_MARK_MEMBER_NAME(ClientPrefs_obj::engineWatermarks,"engineWatermarks");
 	HX_MARK_MEMBER_NAME(ClientPrefs_obj::optimization,"optimization");
+	HX_MARK_MEMBER_NAME(ClientPrefs_obj::week7AssetsAllowed,"week7AssetsAllowed");
 	HX_MARK_MEMBER_NAME(ClientPrefs_obj::keyBinds,"keyBinds");
 	HX_MARK_MEMBER_NAME(ClientPrefs_obj::defaultKeys,"defaultKeys");
 };
@@ -542,6 +549,7 @@ static void ClientPrefs_obj_sVisitStatics(HX_VISIT_PARAMS) {
 	HX_VISIT_MEMBER_NAME(ClientPrefs_obj::hideTime,"hideTime");
 	HX_VISIT_MEMBER_NAME(ClientPrefs_obj::engineWatermarks,"engineWatermarks");
 	HX_VISIT_MEMBER_NAME(ClientPrefs_obj::optimization,"optimization");
+	HX_VISIT_MEMBER_NAME(ClientPrefs_obj::week7AssetsAllowed,"week7AssetsAllowed");
 	HX_VISIT_MEMBER_NAME(ClientPrefs_obj::keyBinds,"keyBinds");
 	HX_VISIT_MEMBER_NAME(ClientPrefs_obj::defaultKeys,"defaultKeys");
 };
@@ -573,6 +581,7 @@ static ::String ClientPrefs_obj_sStaticFields[] = {
 	HX_("hideTime",ef,b5,ca,a5),
 	HX_("engineWatermarks",b1,52,3c,d3),
 	HX_("optimization",2d,3b,3f,e1),
+	HX_("week7AssetsAllowed",22,53,c3,62),
 	HX_("keyBinds",f7,b5,69,f7),
 	HX_("defaultKeys",55,db,c5,18),
 	HX_("startControls",f8,e8,77,3c),
@@ -700,8 +709,12 @@ HXDLIN(  30)		engineWatermarks = true;
 HXDLIN(  31)		optimization = false;
             	}
 {
-            	HX_GC_STACKFRAME(&_hx_pos_1453641688f31b8d_34_boot)
-HXDLIN(  34)		keyBinds =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
+            	HX_STACKFRAME(&_hx_pos_1453641688f31b8d_32_boot)
+HXDLIN(  32)		week7AssetsAllowed = true;
+            	}
+{
+            	HX_GC_STACKFRAME(&_hx_pos_1453641688f31b8d_35_boot)
+HXDLIN(  35)		keyBinds =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
             	}
 }
 

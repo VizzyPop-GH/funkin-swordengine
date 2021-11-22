@@ -183,7 +183,7 @@ HXLINE(  38)			this->loadAnims(texture);
 HXLINE(  40)		this->colorSwap->set_hue(hueColor);
 HXLINE(  41)		this->colorSwap->set_saturation(satColor);
 HXLINE(  42)		this->colorSwap->set_brightness(brtColor);
-HXLINE(  43)		this->offset->set((( (Float)(10) ) * (::ClientPrefs_obj::noteSize / ((Float)0.7))),(( (Float)(10) ) * (::ClientPrefs_obj::noteSize / ((Float)0.7))));
+HXLINE(  43)		this->offset->set((( (Float)(-10) ) * (1 + (::ClientPrefs_obj::noteSize / ((Float)0.7)))),(( (Float)(-10) ) * (1 + (::ClientPrefs_obj::noteSize / ((Float)0.7)))));
 HXLINE(  45)		int animNum = ::flixel::FlxG_obj::random->_hx_int(1,2,null());
 HXLINE(  46)		this->animation->play((((HX_("note",f2,17,0a,49) + note) + HX_("-",2d,00,00,00)) + animNum),true,null(),null());
 HXLINE(  47)		 ::flixel::animation::FlxAnimation _hx_tmp = this->animation->_curAnim;

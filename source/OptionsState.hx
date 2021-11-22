@@ -31,7 +31,7 @@ using StringTools;
 // TO DO: Redo the menu creation system for not being as dumb
 class OptionsState extends MusicBeatState
 {
-	var options:Array<String> = ['Preferences', 'Controls', 'Notes'];
+	var options:Array<String> = ['Preferences', 'Controls', 'Note Colors', 'Note Skin'];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
@@ -91,14 +91,17 @@ class OptionsState extends MusicBeatState
 			}
 
 			switch(options[curSelected]) {
-				case 'Notes':
-					openSubState(new NotesSubstate());
-
-				case 'Controls':
-					openSubState(new ControlsSubstate());
-
 				case 'Preferences':
 					openSubState(new PreferencesSubstate());
+					
+				case 'Controls':
+					openSubState(new ControlsSubstate());
+					
+				case 'Note Colors':
+					openSubState(new NotesSubstate());
+					
+				case 'Note Skin':
+					openSubState(new NoteSkinSubstate());
 			}
 		}
 	}
@@ -391,7 +394,39 @@ class NotesSubstate extends MusicBeatSubstate
 	}
 }
 
-
+class NoteSkinSubstate extends MusicBeatSubstate
+{
+    // what am i doing
+    public function new() {
+        super();
+        var noteGroup = new FlxTypedGroup<FlxSprite>();
+        
+        var posX = (165 * i) + 35;
+        var posY:Float = 20;
+        
+        for (i in 0...3) {
+            var note:FlxSprite = new FlxSprite(posX - 70, posY);
+            note.frames = Paths.getSparrowAtlas('NOTE_assets');
+            switch(i) {
+                case 0:
+                    note.animation.addByPrefix('idle', 'purple0');
+                case 1:
+                    note.animation.addByPrefix('idle', 'blue0');
+                case 2:
+                    note.animation.addByPrefix('idle', 'green0');
+                case 3:
+                    note.animation.addByPrefix('idle', 'red0');
+            }
+            note.ID = i;
+            noteGroup.add(note);
+        }
+        return(noteGroup);
+    }
+    
+    override function update(elapsed:Float) {
+    
+    }
+}
 
 class ControlsSubstate extends MusicBeatSubstate {
 	private static var curSelected:Int = -1;

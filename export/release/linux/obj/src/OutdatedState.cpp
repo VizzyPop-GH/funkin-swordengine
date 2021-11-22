@@ -142,7 +142,7 @@ void OutdatedState_obj::create(){
 HXLINE(  21)		this->super::create();
 HXLINE(  23)		 ::flixel::FlxSprite bg =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null())->makeGraphic(::flixel::FlxG_obj::width,::flixel::FlxG_obj::height,-16777216,null(),null());
 HXLINE(  24)		this->add(bg);
-HXLINE(  26)		this->warnText =  ::flixel::text::FlxText_obj::__alloc( HX_CTX ,0,0,::flixel::FlxG_obj::width,((((HX_("Sup bro, looks like you're running an   \n\n\t\t\toutdated version of Psych Engine (",18,4f,ad,2f) + ::MainMenuState_obj::psychEngineVersion) + HX_("),\n\n\t\t\tplease update to ",be,0d,d5,c9)) + ::TitleState_obj::updateVersion) + HX_("!\n\n\t\t\t\n\n\t\t\tThank you for using the Engine!",25,eb,9e,64)),32,null());
+HXLINE(  26)		this->warnText =  ::flixel::text::FlxText_obj::__alloc( HX_CTX ,0,0,::flixel::FlxG_obj::width,((((HX_("Hey!, It seems like you're running an   \n\n\t\t\toutdated version of Sword Engine (",8c,ed,63,a1) + ::MainMenuState_obj::swordEngineVersion) + HX_("),\n\n\t\t\tplease update to ",be,0d,d5,c9)) + ::TitleState_obj::updateVersion) + HX_("!\n\n\t\t\t\n\n\t\t\tThanks for using SE, Check out Psych too!",8b,92,ea,a7)),32,null());
 HXLINE(  33)		this->warnText->setFormat(HX_("VCR OSD Mono",be,44,e4,b8),32,-1,HX_("center",d5,25,db,05),null(),null(),null());
 HXLINE(  34)		this->warnText->screenCenter(::flixel::util::FlxAxes_obj::Y_dyn());
 HXLINE(  35)		this->add(this->warnText);
@@ -168,7 +168,7 @@ HXLINE(  47)					::MusicBeatState_obj::switchState( ::MainMenuState_obj::__alloc
             				HX_END_LOCAL_FUNC1((void))
 
 HXLINE(  42)				::OutdatedState_obj::leftState = true;
-HXLINE(  43)				::CoolUtil_obj::browserLoad(HX_("https://github.com/ShadowMario/FNF-PsychEngine/releases",a2,77,06,8f));
+HXLINE(  43)				::CoolUtil_obj::browserLoad(HX_("https://github.com/swordcube/funkin-swordengine/releases",11,03,ea,58));
 HXLINE(  44)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
 HXDLIN(  44)				_hx_tmp->play(::Paths_obj::sound(HX_("cancelMenu",39,a4,43,b7),null()),null(),null(),null(),null(),null());
 HXLINE(  45)				::flixel::tweens::FlxTween_obj::tween(this->warnText, ::Dynamic(::hx::Anon_obj::Create(1)

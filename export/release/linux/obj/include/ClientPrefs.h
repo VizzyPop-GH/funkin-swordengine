@@ -75,6 +75,7 @@ class HXCPP_CLASS_ATTRIBUTES ClientPrefs_obj : public ::hx::Object
 		static bool hideTime;
 		static bool engineWatermarks;
 		static bool optimization;
+		static bool week7AssetsAllowed;
 		static  ::haxe::ds::StringMap keyBinds;
 		static  ::haxe::ds::StringMap defaultKeys;
 		static void startControls();

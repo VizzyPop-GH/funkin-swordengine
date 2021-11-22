@@ -150,7 +150,7 @@ void FlashingState_obj::create(){
 HXLINE(  21)		this->super::create();
 HXLINE(  23)		 ::flixel::FlxSprite bg =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null())->makeGraphic(::flixel::FlxG_obj::width,::flixel::FlxG_obj::height,-16777216,null(),null());
 HXLINE(  24)		this->add(bg);
-HXLINE(  26)		this->warnText =  ::flixel::text::FlxText_obj::__alloc( HX_CTX ,0,0,::flixel::FlxG_obj::width,HX_("Hey, watch out!\n\n\t\t\tThis Mod contains some flashing lights!\n\n\t\t\tPress ENTER to disable them now or go to Options Menu.\n\n\t\t\tPress ESCAPE to ignore this message.\n\n\t\t\tYou've been warned!",99,b4,d1,af),32,null());
+HXLINE(  26)		this->warnText =  ::flixel::text::FlxText_obj::__alloc( HX_CTX ,0,0,::flixel::FlxG_obj::width,HX_("A warning to all:\n\n\t\t\tThis mod may contain flashing lights.\n\n\t\t\tPress ENTER to disable them now or go to the Options Menu.\n\n\t\t\tPress ESCAPE to ignore this message.\n\n\t\t\tYou've been warned!",38,b7,ef,5e),32,null());
 HXLINE(  33)		this->warnText->setFormat(HX_("VCR OSD Mono",be,44,e4,b8),32,-1,HX_("center",d5,25,db,05),null(),null(),null());
 HXLINE(  34)		this->warnText->screenCenter(::flixel::util::FlxAxes_obj::Y_dyn());
 HXLINE(  35)		this->add(this->warnText);
